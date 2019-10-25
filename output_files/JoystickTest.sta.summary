@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'RateDivider[0]'
+Slack : -11.861
+TNS   : -407.200
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -7.148
+TNS   : -723.476
+
+Type  : Slow 1100mV 85C Model Setup 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : -4.544
+TNS   : -39.937
+
+Type  : Slow 1100mV 85C Model Setup 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : -2.971
+TNS   : -39.691
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'RateDivider[0]'
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : 0.714
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.225
+TNS   : -175.616
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'RateDivider[0]'
+Slack : -0.434
+TNS   : -28.101
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : -0.394
+TNS   : -8.887
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'RateDivider[0]'
+Slack : -12.239
+TNS   : -420.515
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -6.869
+TNS   : -696.881
+
+Type  : Slow 1100mV 0C Model Setup 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : -4.431
+TNS   : -39.101
+
+Type  : Slow 1100mV 0C Model Setup 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : -2.984
+TNS   : -39.541
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'RateDivider[0]'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.225
+TNS   : -185.960
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'RateDivider[0]'
+Slack : -0.450
+TNS   : -28.860
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : -0.394
+TNS   : -8.999
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'RateDivider[0]'
+Slack : -6.612
+TNS   : -222.718
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.376
+TNS   : -326.397
+
+Type  : Fast 1100mV 85C Model Setup 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : -2.494
+TNS   : -21.376
+
+Type  : Fast 1100mV 85C Model Setup 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : -1.598
+TNS   : -18.313
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'RateDivider[0]'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.702
+TNS   : -47.046
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'RateDivider[0]'
+Slack : -0.135
+TNS   : -3.068
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'RateDivider[0]'
+Slack : -6.345
+TNS   : -213.579
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.775
+TNS   : -268.134
+
+Type  : Fast 1100mV 0C Model Setup 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : -2.222
+TNS   : -19.107
+
+Type  : Fast 1100mV 0C Model Setup 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : -1.443
+TNS   : -16.029
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'RateDivider[0]'
+Slack : 0.262
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.702
+TNS   : -46.497
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'RateDivider[0]'
+Slack : -0.093
+TNS   : -1.870
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|clkcnt[0]'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ADXLTest:a0|LCDTest:l0|current_state[1]'
+Slack : 0.371
+TNS   : 0.000
+
+------------------------------------------------------------

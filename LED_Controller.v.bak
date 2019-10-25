@@ -1,0 +1,75 @@
+module LED_controller (input [25:0] dist_counter, input CLOCK_50, output [9:0] LEDR);
+
+	
+	reg LEDR0, LEDR1, LEDR2, LEDR3, LEDR4, LEDR5, LEDR6, LEDR7, LEDR8, LEDR9;
+	
+	assign LEDR[0] = LEDR0;
+	assign LEDR[1] = LEDR1;
+	assign LEDR[2] = LEDR2;
+	assign LEDR[3] = LEDR3;
+	assign LEDR[4] = LEDR4;
+	assign LEDR[5] = LEDR5;
+	assign LEDR[6] = LEDR6;
+	assign LEDR[7] = LEDR7;
+	assign LEDR[8] = LEDR8;
+	assign LEDR[9] = LEDR9;
+	
+	always @ (posedge CLOCK_50)
+	begin
+		
+		if (dist_counter >= 14500) 
+			LEDR0 <= 1;	
+		else 
+			LEDR0 <= 0;
+		
+		if (dist_counter >= 29000)  
+			LEDR1 <= 1;
+		else 
+			LEDR1 <= 0;
+		
+		if (dist_counter >= 43500) 
+			LEDR2 <= 1;
+		else 
+			LEDR2 <= 0;
+			
+		if (dist_counter >= 58000)  
+			LEDR3 <= 1;
+		else 
+			LEDR3 <= 0;
+			
+		if (dist_counter >= 72500) 
+			LEDR4 <= 1;
+		else 
+			LEDR4 <= 0;
+			
+		if (dist_counter >= 87000)  
+			LEDR5 <= 1;
+		else 
+			LEDR5 <= 0;
+			
+		if (dist_counter >= 101500) 
+			LEDR6 <= 1;
+		else 
+			LEDR6 <= 0;
+		
+		if (dist_counter >= 116000)  
+			LEDR7 <= 1;
+		else 
+			LEDR7 <= 0;
+		
+		if (dist_counter >= 130500) 
+			LEDR8 <= 1;
+		else 
+			LEDR8 <= 0;
+			
+		if (dist_counter >= 145000)  
+			LEDR9 <= 1;
+		else 
+			LEDR9 <= 0;
+			
+			
+	end
+	
+	
+
+endmodule

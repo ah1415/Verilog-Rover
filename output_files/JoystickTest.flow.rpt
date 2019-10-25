@@ -1,0 +1,140 @@
+Flow report for JoystickTest
+Wed Nov 28 16:12:37 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Nov 28 16:12:27 2018           ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                   ; JoystickTest                                    ;
+; Top-level Entity Name           ; adc_demo_mega                                   ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 442 / 32,070 ( 1 % )                            ;
+; Total registers                 ; 335                                             ;
+; Total pins                      ; 130 / 457 ( 28 % )                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
+; Total DSP Blocks                ; 1 / 87 ( 1 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/28/2018 16:11:17 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; JoystickTest        ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                              ;
++-------------------------------------+------------------------------------------------------------+---------------+---------------+------------+
+; Assignment Name                     ; Value                                                      ; Default Value ; Entity Name   ; Section Id ;
++-------------------------------------+------------------------------------------------------------+---------------+---------------+------------+
+; COMPILER_SIGNATURE_ID               ; 167746773772026.154343947711292                            ; --            ; --            ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --            ; --            ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --            ; --            ; --         ;
+; MISC_FILE                           ; atan/synthesis/../atan.cmp                                 ; --            ; --            ; --         ;
+; MISC_FILE                           ; atan/synthesis/../../atan.qsys                             ; --            ; --            ; --         ;
+; MISC_FILE                           ; joystick/synthesis/../joystick.cmp                         ; --            ; --            ; --         ;
+; MISC_FILE                           ; joystick/synthesis/../../joystick.qsys                     ; --            ; --            ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                     ; --            ; adc_demo_mega ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                     ; --            ; adc_demo_mega ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                     ; --            ; adc_demo_mega ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                        ; --            ; --            ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                      ; --            ; --            ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                               ; --            ; --            ; --         ;
+; SLD_FILE                            ; atan/synthesis/atan.debuginfo                              ; --            ; --            ; --         ;
+; SLD_FILE                            ; joystick/synthesis/joystick.debuginfo                      ; --            ; --            ; --         ;
+; SLD_INFO                            ; QSYS_NAME atan HAS_SOPCINFO 1 GENERATION_ID 1542172964     ; --            ; atan          ; --         ;
+; SLD_INFO                            ; QSYS_NAME joystick HAS_SOPCINFO 1 GENERATION_ID 1542169238 ; --            ; joystick      ; --         ;
+; SOPCINFO_FILE                       ; atan/synthesis/../../atan.sopcinfo                         ; --            ; --            ; --         ;
+; SOPCINFO_FILE                       ; joystick/synthesis/../../joystick.sopcinfo                 ; --            ; --            ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                         ; --            ; --            ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                         ; --            ; --            ; --         ;
+; TOP_LEVEL_ENTITY                    ; adc_demo_mega                                              ; JoystickTest  ; --            ; --         ;
++-------------------------------------+------------------------------------------------------------+---------------+---------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 775 MB              ; 00:00:25                           ;
+; Fitter               ; 00:00:47     ; 1.1                     ; 2575 MB             ; 00:01:37                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 728 MB              ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.3                     ; 1046 MB             ; 00:00:10                           ;
+; Total                ; 00:01:17     ; --                      ; --                  ; 00:02:19                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; BA3155WS06       ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; BA3155WS06       ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; BA3155WS06       ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; BA3155WS06       ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off JoystickTest -c JoystickTest
+quartus_fit --read_settings_files=off --write_settings_files=off JoystickTest -c JoystickTest
+quartus_asm --read_settings_files=off --write_settings_files=off JoystickTest -c JoystickTest
+quartus_sta JoystickTest -c JoystickTest
+
+
+

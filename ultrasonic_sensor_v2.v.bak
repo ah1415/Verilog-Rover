@@ -1,0 +1,54 @@
+module ultrasonic_sensor_v2(input [0:0]GPIO_0, input CLOCK_50, input [0:0]KEY, input [0:0] SW,	// SW is for testing enable for buzzer 
+	output [9:0]LEDR, output [1:0]GPIO_1, 
+	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
+	
+	reg GPIO_1_reg;
+	
+	assign GPIO_1[0] = GPIO_1_reg;
+	
+	wire reset= ~KEY[0];
+	reg [25:0] counter;
+	reg [22:0] dist_count;
+	always@(posedge CLOCK_50)
+	begin
+		if(reset)begin
+		counter<=26'b0;
+		dist_count<=23'b0;
+		end
+		else
+		begin
+		counter<=counter+1'b1;
+		
+		//10 us trig
+		if(counter<=9'd500)
+			GPIO_1_reg<=1'b1;
+		else
+			GPIO_1_reg<=1'b0;
+		
+		//Distance Clock count
+		if(GPIO_0[0]==1'b1)
+			dist_count<=dist_count+1'b1;
+		
+		//resets
+		if(counter==26'd50000000)
+		begin
+		counter<=26'b0;
+		dist_count<=23'b0;
+		end
+		end
+		
+	end
+	HEXDecoder hex0(dist_count[3:0], HEX0);
+	HEXDecoder hex1(dist_count[7:4], HEX1);
+	HEXDecoder hex2(dist_count[11:8], HEX2);
+	HEXDecoder hex3(dist_count[15:12], HEX3);
+	HEXDecoder hex4(dist_count[19:16], HEX4);
+	HEXDecoder hex5(dist_count[22:20], HEX5);
+	
+	
+	LED_controller LED_system (.dist_counter(dist_count), .CLOCK_50(CLOCK_50), .LEDR(LEDR));
+	
+	reverse_buzzer buzzer (.enable(SW[0]), .CLOCK_50(CLOCK_50), .buzz(GPIO_1[1]));
+
+
+endmodule

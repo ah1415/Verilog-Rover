@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at JoystickTest.v(387): always construct contains both blocking and non-blocking assignments File: D:/ECE244 Final/JoystickTest.v Line: 387
+Info (10281): Verilog HDL Declaration information at JoystickTest.v(296): object "CLK" differs only in case from object "clk" in the same scope File: D:/ECE244 Final/JoystickTest.v Line: 296

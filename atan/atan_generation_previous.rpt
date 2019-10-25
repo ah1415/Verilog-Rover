@@ -1,0 +1,34 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Austin\Documents\ECE241 new\JoystickTest\atan.qsys" --block-symbol-file --output-directory="C:\Users\Austin\Documents\ECE241 new\JoystickTest\atan" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading JoystickTest/atan.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 18.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Austin\Documents\ECE241 new\JoystickTest\atan.qsys" --synthesis=VERILOG --output-directory="C:\Users\Austin\Documents\ECE241 new\JoystickTest\atan\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading JoystickTest/atan.qsys
+Progress: Reading input file
+Progress: Adding CORDIC_0 [altera_CORDIC 18.0]
+Progress: Parameterizing module CORDIC_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: atan: Generating atan "atan" for QUARTUS_SYNTH
+Info: CORDIC_0: C:/intelfpga_lite/18.0/quartus/dspba/backend/windows64/cmdPolyEval -target CycloneV -frequency 50 -name atan_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 6 FXPAtan2Expert 12 0 0 8 0 0
+Info: CORDIC_0: Latency on Cyclone V is 2 cycles
+Info: CORDIC_0: DSP Blocks Used: 0
+Info: CORDIC_0: LUTs Used: 747
+Info: CORDIC_0: Memory Bits Used: 0
+Info: CORDIC_0: Memory Blocks Used: 0
+Info: CORDIC_0: "atan" instantiated altera_CORDIC "CORDIC_0"
+Info: atan: Done "atan" with 2 modules, 4 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
